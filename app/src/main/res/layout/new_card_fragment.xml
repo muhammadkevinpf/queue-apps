@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewCardFragment">
+
+
+    <EditText
+        android:id="@+id/txt_nokartu_pengunjung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:hint="No Kartu"
+        android:inputType="number"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_nama_pengunjung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:hint="Nama Pengunjung"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nokartu_pengunjung" />
+
+    <Spinner
+        android:id="@+id/spinner_jenis_kelamin"
+        android:background="@drawable/border_bottom"
+        android:layout_width="372dp"
+        android:layout_height="42dp"
+        android:layout_margin="20sp"
+        android:layout_marginTop="92dp"
+        android:entries="@array/gender"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nama_pengunjung" />
+
+<!--    <EditText-->
+<!--        android:id="@+id/txt_waktu_masuk"-->
+<!--        android:layout_width="292dp"-->
+<!--        android:layout_height="41dp"-->
+<!--        android:layout_margin="20sp"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="28dp"-->
+<!--        android:hint="Waktu Masuk"-->
+<!--        android:enabled="false"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/spinner_jenis_kelamin" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_waktu_masuk"-->
+<!--        android:layout_width="69dp"-->
+<!--        android:layout_height="43dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        app:icon="@android:drawable/presence_away"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/button_second"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.466"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/txt_waktu_masuk"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/spinner_jenis_kelamin"-->
+<!--        app:layout_constraintVertical_bias="0.0"-->
+<!--        app:srcCompat="@android:drawable/ic_input_add" />-->
+
+    <Button
+        android:id="@+id/button_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_jenis_kelamin"
+        app:layout_constraintVertical_bias="0.137" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
